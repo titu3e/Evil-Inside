@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="PANDITHAN/Evil-Inside.jpeg" alt="Evil-Inside Logo">
+  <img src="https://telegra.ph/file/79b83c9bc2617ca28ec4f.jpg" alt="Evil-Inside Logo">
 </p>
 <h1 align="center">
   <b>Evil-Inside</b>
