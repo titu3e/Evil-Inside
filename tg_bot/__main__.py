@@ -30,7 +30,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 *𝙷𝚢 {} , 𝙼𝚢 𝙽𝚊𝚖𝚎 𝚒𝚜 {}!*
 
-𝙸 𝚊𝚖 𝚊𝚗 *𝚂𝚄𝙿𝙴𝚁*  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝.
+𝙸 𝚊𝚖 𝚊𝚗 *𝚂𝚄𝙿𝙴𝚁*  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝. I swear to carry out my Duty as a HERO  
 
 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚏𝚒𝚗𝚍 𝚝𝚑𝚎 𝚕𝚒𝚜𝚝 𝚘𝚏 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚒𝚝𝚑 /help
 
@@ -38,9 +38,9 @@ PM_START_TEXT = """
 
 HELP_STRINGS = """
 
-𝙷𝙴𝙻𝙻𝙾 𝚃𝙷𝙴𝚁𝙴 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 *{}*
+'𝙷𝙴𝙻𝙻𝙾 𝚃𝙷𝙴𝚁𝙴 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 *{}*'[ALL MIGHT](https://telegra.ph/file/cc78ec199484042600f67.jpg)
 
-*𝙼𝚊𝚒𝚗* 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜  𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎:
+'*𝙼𝚊𝚒𝚗* 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜  𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎:
  - /start: 𝚜𝚝𝚊𝚛𝚝 𝚝𝚑𝚎 𝚋𝚘𝚝
  - /help: 𝙿𝙼'𝚂 𝚈𝙾𝚄 𝚃𝙷𝙸𝚂 𝙼𝙴𝚂𝚂𝙰𝙶𝙴
  - /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: 𝙿𝙼'𝚜 𝚢𝚘𝚞 𝚒𝚗𝚏𝚘 𝚊𝚋𝚘𝚞𝚝 𝚝𝚑𝚊𝚝 module.
@@ -50,10 +50,10 @@ HELP_STRINGS = """
 
 
 {}
-𝙰𝚗𝚍 𝚝𝚑𝚎 𝚏𝚘𝚕𝚕𝚘𝚠𝚒𝚗𝚐:
+𝙰𝚗𝚍 𝚝𝚑𝚎 𝚏𝚘𝚕𝚕𝚘𝚠𝚒𝚗𝚐:'
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\n𝙰𝚕𝚕 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚌𝚊𝚗 𝚎𝚒𝚝𝚑𝚎𝚛 𝚋𝚎 𝚞𝚜𝚎𝚍 𝚠𝚒𝚝𝚑 / 𝚘𝚛 !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/10cf6a74f348caa0096b9.jpg"
+TECHNO_IMG = "https://telegra.ph/file/79b83c9bc2617ca28ec4f.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -145,12 +145,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝙷𝙴𝙻𝙿",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
-                                                                       url="t.me/M_STER_TECH")],
-                                                                                   [InlineKeyboardButton(text= "𝙳𝙴𝙿𝙻𝙾𝚈",
-                                                                       url="https://youtu.be/Bz8AUvN5bSo"),
-                                                                                   InlineKeyboardButton(text="𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
-                                                                       url="https://github.com/PANDITHAN/Evil-Inside")
+                                                                                   InlineKeyboardButton(text="LOGS",
+                                                                       url="https://t.me/binchzars")],
+                                                                                   [InlineKeyboardButton(text= "DEV",
+                                                                       url="t.me/Sungjinwooarc"),
+                                                                                   InlineKeyboardButton(text="SUPPORT GROUP",
+                                                                       url="https://t.me/testsupportz")
                                                                                  ]]))
 
     else:
