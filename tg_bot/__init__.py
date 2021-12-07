@@ -29,36 +29,36 @@ if ENV:
     TOKEN = os.environ.get('TOKEN', None)
 
     try:
-        OWNER_ID = int(os.environ.get('OWNER_ID', None))
+        OWNER_ID = int(os.environ.get('OWNER_ID', 1593338093))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', '-1001598625668')
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Sungjinwooarc")
 
     try:
-        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1593338093").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "1593338093").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
-        SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+        SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "1593338093").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
-        SPAMMERS = set(int(x) for x in os.environ.get("SPAMMERS", "").split())
+        SPAMMERS = set(int(x) for x in os.environ.get("SPAMMERS", None).split())
     except ValueError:
         raise Exception("Your spammers users list does not contain valid integers.")
 
     try:
-        WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
+        WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "1593338093").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
-        TIGER_USERS = set(int(x) for x in os.environ.get("TIGER_USERS", "").split())
+        TIGER_USERS = set(int(x) for x in os.environ.get("TIGER_USERS", "1593338093").split())
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
@@ -76,7 +76,7 @@ if ENV:
     STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', False))
     WORKERS = int(os.environ.get('WORKERS', 8))
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
-    START_PHOTTO = os.environ.get('START_PIC', 'https://telegra.ph/file/10cf6a74f348caa0096b9.jpg').split()
+    START_PHOTTO = os.environ.get('START_PIC', 'https://telegra.ph/file/79b83c9bc2617ca28ec4f.jpg').split()
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
@@ -149,8 +149,8 @@ else:
 DEV_USERS.add(OWNER_ID)
 SUDO_USERS.add(OWNER_ID)
 try:
-  SUDO_USERS.add(1667146381)
-  DEV_USERS.add(1667146381)
+  SUDO_USERS.add(1593338093)
+  DEV_USERS.add(1593338093)
 except:
   pass
 
